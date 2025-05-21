@@ -1,0 +1,170 @@
+/* Custom Color Classes */
+.bg-light-peach {
+    background-color: #FFF5E6;
+}
+
+.bg-soft-green {
+    background-color: #E6F4EA;
+}
+
+.bg-pale-orange {
+    background-color: #FFE8CC;
+}
+
+.bg-light-yellow {
+    background-color: #FFF9E6;
+}
+
+.bg-deep-green {
+    background-color: #1A7F3D;
+}
+
+.text-orange-500 {
+    color: #FF9500;
+}
+
+.text-orange-600 {
+    color: #E68600;
+}
+
+.bg-orange-500 {
+    background-color: #FF9500;
+}
+
+.bg-orange-600 {
+    background-color: #E68600;
+}
+
+.text-green-500 {
+    color: #34C759;
+}
+
+.text-green-600 {
+    color: #2DB74F;
+}
+
+.bg-green-500 {
+    background-color: #34C759;
+}
+
+.bg-green-600 {
+    background-color: #2DB74F;
+}
+
+.text-gray-800 {
+    color: #333333;
+}
+
+.text-gray-600 {
+    color: #666666;
+}
+
+/* Hero Section Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.contact-us-btn, .whatsapp-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.contact-us-btn {
+    background-color: #FF9500;
+}
+
+.contact-us-btn:hover {
+    background-color: #E68600;
+}
+
+.whatsapp-btn {
+    background-color: #34C759;
+}
+
+.whatsapp-btn:hover {
+    background-color: #2DB74F;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade-in animation for sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile menu toggle */
+#mobile-menu.active {
+    display: block;
+}
+
+/* Card hover effect with scale-up */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hero Section Animations */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-out forwards;
+}
+
+.animate-slide-up.delay-200 {
+    animation-delay: 0.2s;
+}
+
+/* Bounce-in Animation for WhatsApp Button */
+.animate-bounce-in {
+    animation: bounceIn 1s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0% { opacity: 0; transform: scale(0.3); }
+    50% { opacity: 1; transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}

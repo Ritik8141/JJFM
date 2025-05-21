@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJFM - Premium Fruit Supplier for B2B in Phagwara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Poppins',sans-serif] bg-light-peach text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-soft-green shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="JJFM Logo" class="h-12 mr-3">
+                <div>
+                    <h1 class="text-2xl font-bold text-green-700">JJFM</h1>
+                    <p class="text-sm text-orange-500">Premium Fruits Since 2004</p>
+                </div>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <ul id="nav-menu" class="flex space-x-8 text-gray-800">
+                    <li><a href="#home" class="hover:text-orange-500 transition-colors">Home</a></li>
+                    <li><a href="#products" class="hover:text-orange-500 transition-colors">Products</a></li>
+                    <li><a href="#trust" class="hover:text-orange-500 transition-colors">Why Us</a></li>
+                    <li><a href="#b2b" class="hover:text-orange-500 transition-colors">B2B Solutions</a></li>
+                    <li><a href="#contact" class="hover:text-orange-500 transition-colors">Contact</a></li>
+                </ul>
+                <!-- Contact Details for Desktop -->
+                <div class="flex items-center space-x-4 text-sm">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-1 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.09-.22c1.16.47 2.39.74 3.66.74a1 1 0 011 1v3.5a1 1 0 01-1 1C9.49 22 2 14.51 2 5.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.27 2.5.74 3.66a1 1 0 01-.22 1.09l-2.2 2.2zm4.78 1.47l2.2-2.2a1 1 0 011.41 0l3.5 3.5a1 1 0 010 1.41l-2.2 2.2a15.05 15.05 0 01-6.59-6.59z"/>
+                        </svg>
+                        <a href="tel:+917396028141" class="text-gray-800 hover:text-green-500 transition-colors">+91 73960 28141</a>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-1 text-orange-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm-1.41 2L12 12.59 5.41 6H19.59zM4 18V7.41l8 8 8-8V18H4z"/>
+                        </svg>
+                        <a href="mailto:info@jjfm.com" class="text-gray-800 hover:text-orange-500 transition-colors">info@jjfm.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-soft-green shadow-lg">
+            <ul class="flex flex-col space-y-4 p-4 text-gray-800">
+                <li><a href="#home" class="hover:text-orange-500 transition-colors">Home</a></li>
+                <li><a href="#products" class="hover:text-orange-500 transition-colors">Products</a></li>
+                <li><a href="#trust" class="hover:text-orange-500 transition-colors">Why Us</a></li>
+                <li><a href="#b2b" class="hover:text-orange-500 transition-colors">B2B Solutions</a></li>
+                <li><a href="#contact" class="hover:text-orange-500 transition-colors">Contact</a></li>
+                <!-- Contact Details for Mobile -->
+                <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.09-.22c1.16.47 2.39.74 3.66.74a1 1 0 011 1v3.5a1 1 0 01-1 1C9.49 22 2 14.51 2 5.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.27 2.5.74 3.66a1 1 0 01-.22 1.09l-2.2 2.2zm4.78 1.47l2.2-2.2a1 1 0 011.41 0l3.5 3.5a1 1 0 010 1.41l-2.2 2.2a15.05 15.05 0 01-6.59-6.59z"/>
+                    </svg>
+                    <a href="tel:+917396028141" class="text-gray-800 hover:text-green-500 transition-colors">+91 73960 28141</a>
+                </li>
+                <li class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm-1.41 2L12 12.59 5.41 6H19.59zM4 18V7.41l8 8 8-8V18H4z"/>
+                    </svg>
+                    <a href="mailto:info@jjfm.com" class="text-gray-800 hover:text-orange-500 transition-colors">info@jjfm.com</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center h-[700px] flex items-center justify-center" style="background-image: url('images/hero-bg.jpg');">
+        <div class="absolute inset-0 bg-gray-800/70"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <img src="images/logo.png" alt="JJFM Logo" class="h-24 mx-auto mb-8 animate-fade-in">
+            <h2 class="text-5xl md:text-6xl font-bold mb-6 animate-slide-up">Fresh Fruits for Your Business</h2>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto animate-slide-up delay-200">Premium quality fruits for hotels, offices, and juice counters in Phagwara. Trusted since 2004.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="contact-us-btn">Contact Us</a>
+                <a href="https://wa.me/+917396028141" target="_blank" class="whatsapp-btn">Order via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-pale-orange">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gray-800">Our Premium Products</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Fresh Fruits -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/fruits.png" alt="Fresh Fruits" class="w-full h-56 object-contain rounded-lg mb-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4">Fresh Fruits</h4>
+                    <a href="#fresh-fruits" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all">Explore Fresh Fruits</a>
+                </div>
+                <!-- Fresh Juice -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/juice.png" alt="Fresh Juice" class="w-full h-56 object-contain rounded-lg mb-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4">Fresh Juices</h4>
+                    <a href="#fresh-juices" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all">Explore Fresh Juices</a>
+                </div>
+                <!-- Fruit Baskets -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/basket.png" alt="Fruit Basket" class="w-full h-56 object-contain rounded-lg mb-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4">Fruit Baskets</h4>
+                    <a href="#fruit-baskets" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all">Explore Fruit Baskets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fresh Fruits Subsection -->
+    <section id="fresh-fruits" class="py-20 bg-light-yellow">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gray-800">Fresh Fruits Collection</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/banana.png" alt="Bananas" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Bananas</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/apple.png" alt="Apples" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Apples</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/orange.png" alt="Oranges" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Oranges</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/mangoes.png" alt="Mangoes (Seasonal)" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Mangoes (Seasonal)</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/grapes.png" alt="Grapes" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Grapes</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/bulk_fruits.png" alt="Seasonal/Bulk Orders" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Seasonal/Bulk Orders</h4>
+                </div>
+            </div>
+            <p class="text-gray-800 mt-12 text-lg">We provide bulk pricing for businesses. <a href="https://wa.me/+917396028141" target="_blank" class="text-orange-500 hover:text-orange-600 underline">Ask us on WhatsApp</a>.</p>
+        </div>
+    </section>
+
+    <!-- Fresh Juices Subsection -->
+    <section id="fresh-juices" class="py-20 bg-pale-orange">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gray-800">Fresh Juices Collection</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/apple_juice.png" alt="Apple Juice" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Apple Juice</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/orange_juice.png" alt="Orange Juice" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Orange Juice</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/mix_juice.png" alt="Mix Juice" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Mix Juice</h4>
+                </div>
+            </div>
+            <p class="text-gray-800 mt-12 text-lg">We provide bulk pricing for businesses. <a href="https://wa.me/+917396028141" target="_blank" class="text-orange-500 hover:text-orange-600 underline">Ask us on WhatsApp</a>.</p>
+        </div>
+    </section>
+
+    <!-- Fruit Baskets Subsection -->
+    <section id="fruit-baskets" class="py-20 bg-light-yellow">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gray-800">Fruit Baskets Collection</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/large_bucket.png" alt="Large Fruit Basket" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Large Fruit Basket</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/medium_bucket.png" alt="Medium Fruit Basket" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Medium Fruit Basket</h4>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <img src="images/small_bucket.png" alt="Small Fruit Basket" class="w-full h-40 object-contain rounded-lg mb-4">
+                    <h4 class="text-xl font-semibold text-gray-800">Small Fruit Basket</h4>
+                </div>
+            </div>
+            <p class="text-gray-800 mt-12 text-lg">We provide bulk pricing for businesses. <a href="https://wa.me/+917396028141" target="_blank" class="text-orange-500 hover:text-orange-600 underline">Ask us on WhatsApp</a>.</p>
+        </div>
+    </section>
+
+    <!-- Trust Section (Why Choose Us + Clients) -->
+    <section id="trust" class="py-20 bg-soft-green">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gray-800">Why Businesses Trust JJFM</h3>
+            <!-- Why Choose Us -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">20+ Years of Excellence</h4>
+                    <p class="text-gray-600">Serving Phagwara with trust since 2004.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Trusted by Leaders</h4>
+                    <p class="text-gray-600">Doctors, politicians, and businesses rely on us.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Premium Quality</h4>
+                    <p class="text-gray-600">Fresh, high-quality fruits sourced daily.</p>
+                </div>
+            </div>
+            <!-- Clients -->
+            <h4 class="text-3xl font-bold mb-8 text-gray-800">Our Esteemed Clients</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h5 class="text-xl font-semibold text-gray-800 mb-2">Doctors & Professionals</h5>
+                    <p class="text-gray-600">Trusted by medical professionals for their daily fruit needs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h5 class="text-xl font-semibold text-gray-800 mb-2">Government & Industrial Leaders</h5>
+                    <p class="text-gray-600">Serving politicians, officers, and industrialists with reliability.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h5 class="text-xl font-semibold text-gray-800 mb-2">Celebrities & Influencers</h5>
+                    <p class="text-gray-600">A favorite among local celebrities for premium quality fruits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-light-peach">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gray-800">What Our Clients Say</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-gray-600 mb-4">"JJFM has been our go-to fruit supplier for years. Their quality and reliability are unmatched!"</p>
+                    <h5 class="text-lg font-semibold text-gray-800">Dr. Amit Sharma</h5>
+                    <p class="text-gray-500">Local Physician</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-gray-600 mb-4">"We source all our fruits for our hotel buffet from JJFM. Always fresh and delivered on time."</p>
+                    <h5 class="text-lg font-semibold text-gray-800">Rohan Singh</h5>
+                    <p class="text-gray-500">Hotel Manager</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-gray-600 mb-4">"Their bulk ordering process is seamless, and the fruits are always top-notch."</p>
+                    <h5 class="text-lg font-semibold text-gray-800">Priya Malhotra</h5>
+                    <p class="text-gray-500">Juice Counter Owner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B Solutions Section -->
+    <section id="b2b" class="py-20 bg-pale-orange">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gray-800">B2B Solutions for Your Business</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Hotels</h4>
+                    <p class="text-gray-600">Fresh fruits for breakfast buffets and guest amenities.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Office Pantries</h4>
+                    <p class="text-gray-600">Healthy fruit options for employees and meetings.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">PGs & Hostels</h4>
+                    <p class="text-gray-600">Affordable bulk supply for student accommodations.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Juice Counters</h4>
+                    <p class="text-gray-600">Daily fresh fruits for juicing and smoothies.</p>
+                </div>
+            </div>
+            <a href="#contact" class="mt-12 inline-block bg-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-600 transition-all animate-pulse">Get a Quote Today</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-light-yellow">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-12 text-gray-800">Get in Touch</h3>
+            <p class="text-gray-800 mb-12 max-w-2xl mx-auto text-lg">Ready to partner with JJFM? Reach out for bulk orders or inquiries!</p>
+            <div class="flex flex-col md:flex-row gap-12 max-w-5xl mx-auto">
+                <!-- Contact Form -->
+                <form action="https://formspree.io/f/mblopdwr" method="POST" class="flex-1 bg-white p-8 rounded-xl shadow-lg">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-4 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                    <input type="text" name="business_name" placeholder="Business Name" class="w-full p-4 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-4 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                    <textarea name="inquiry" placeholder="Your Inquiry" class="w-full p-4 mb-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500" rows="4" required></textarea>
+                    <button type="submit" class="bg-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-600 transition-all w-full animate-pulse">Send Inquiry</button>
+                </form>
+                <!-- Contact Info -->
+                <div class="flex-1 bg-white p-8 rounded-xl shadow-lg">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h4>
+                    <p class="text-gray-600 mb-4"><strong>Location:</strong> Central Town, Hargobind Nagar, Phagwara</p>
+                    <p class="text-gray-600 mb-4"><strong>Phone:</strong> <a href="tel:+917396028141" class="text-orange-500 hover:text-orange-600">+91 73960 28141</a></p>
+                    <p class="text-gray-600 mb-4"><strong>Email:</strong> <a href="mailto:info@jjfm.com" class="text-orange-500 hover:text-orange-600">info@jjfm.com</a></p>
+                    <a href="https://wa.me/+917396028141" target="_blank" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-all animate-pulse">Message on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-deep-green text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <img src="images/logo.png" alt="JJFM Logo" class="h-12 mx-auto mb-4">
+            <p class="text-sm">© 2025 Jugal Juice Fruit Merchant (JJFM). All rights reserved.</p>
+            <p class="text-sm mt-2">Central Town, Hargobind Nagar, Phagwara</p>
+            <p class="text-sm mt-2">Follow us: <a href="#" class="underline hover:text-orange-300 transition-all">Facebook</a> | <a href="#" class="underline hover:text-orange-300 transition-all">Instagram</a></p>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/+917396028141" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all z-50 animate-bounce-in">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.56 4.14 1.536 5.894L0 24l6.186-1.62A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.001c-1.87 0-3.627-.487-5.142-1.338l-.363-.192-3.672.961.977-3.573-.192-.363A9.955 9.955 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.794-6.548l-.794-.396a.624.624 0 00-.702.102l-.468.468a.624.624 0 01-.702.102c-.468-.234-2.808-1.404-4.44-3.036-1.632-1.632-2.802-3.972-3.036-4.44a.624.624 0 01.102-.702l.468-.468a.624.624 0 00.102-.702l-.396-.794a.624.624 0 00-.606-.396c-.468 0-1.404.936-1.404 1.404 0 2.106 2.574 4.212 2.808 4.446 0 0 2.106 2.574 4.446 2.808.468 0 1.404-.936 1.404-1.404a.624.624 0 00-.396-.606z"/>
+        </svg>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
